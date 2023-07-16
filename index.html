@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--Bootstrap styles and js-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--quizlib-->
+    <script src="quizlib/src/quizlib.js" defer></script>
+    <link rel="stylesheet" href="quizlib/src/quizlib.css">
+
+    <!--my code-->
+    <link rel="stylesheet" href="main.css">
+		<script src="index.js" defer></script>
+
+    <title>Test Danya</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+					<h1>Danya Is Repo</h1>
+					<p class="fs-6">This site was dedicated for only one person, who wants to be a best programmer in the World</p>
+        </header>
+        <main>
+
+            <div id="quiz-div">
+                <!-- Question 1 -->
+                <div class="quizlib-question my-class">
+                    <div class="quizlib-question-title">1. How to say "Я репозиторий" in english</div>
+                    <div class="quizlib-question-answers">
+											<label><input class="form-control" type="text"></label>
+                    </div>
+                </div>
+                <!-- Question 2 -->
+                <div class="quizlib-question my-class">
+                    <div class="quizlib-question-title">2. How to say "Git репозиторий, который может быть удаленным"</div>
+                    <div class="quizlib-question-answers">
+											<label><input class="form-control" type="text"></label>
+                    </div>
+                </div>
+                <!-- Question 3 -->
+                <div class="quizlib-question my-class">
+                    <div class="quizlib-question-title">3. Which command let you enable insert mode in vim</div>
+                    <div class="quizlib-question-answers">
+                        <ul>
+                            <li><label><input type="checkbox" name="q2" value="a"> a</label></li>
+                            <li><label><input type="checkbox" name="q2" value="b"> A</label></li>
+                            <li><label><input type="checkbox" name="q2" value="c"> I</label></li>
+                            <li><label><input type="checkbox" name="q2" value="d"> i</label></li>
+                            <li><label><input type="checkbox" name="q2" value="e"> u</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Question 4 -->
+                <div class="quizlib-question my-class">
+                    <div class="quizlib-question-title">4. Which command let you go down on the next line</div>
+                    <div class="quizlib-question-answers">
+                        <ul>
+                            <li><label><input type="checkbox" name="q2" value="a"> j</label></li>
+                            <li><label><input type="checkbox" name="q2" value="b"> J</label></li>
+                            <li><label><input type="checkbox" name="q2" value="c"> k</label></li>
+                            <li><label><input type="checkbox" name="q2" value="d"> l</label></li>
+                            <li><label><input type="checkbox" name="q2" value="e"> h</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="quizlib-question my-class">
+                    <div class="quizlib-question-title">5. What is a git?</div>
+                    <div class="quizlib-question-answers">
+                        <ul>
+                            <li><label><input type="checkbox" name="q2" value="a"> Git is a VCS</label></li>
+                            <li><label><input type="checkbox" name="q2" value="b"> Git is a repository</label></li>
+                            <li><label><input type="checkbox" name="q2" value="c"> Git is remote repository</label></li>
+                            <li><label><input type="checkbox" name="q2" value="d"> Git is GitHub</label></li>
+                            <li><label><input type="checkbox" name="q2" value="e"> Git is local repository</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="quizlib-question my-class">
+                    <div class="quizlib-question-title">6. Choose the correct statment</div>
+                    <div class="quizlib-question-answers">
+                        <ul>
+                            <li><label><input type="checkbox" name="q2" value="a"> Git is GitHub</label></li>
+                            <li><label><input type="checkbox" name="q2" value="b"> Repository can be local and remote</label></li>
+                            <li><label><input type="checkbox" name="q2" value="c"> Repository is a place where storage data</label></li>
+														<li><label><input type="checkbox" name="q2" value="d"> <b>cd</b> is a command, which can move you to some directory</label></li>
+														<li><label><input type="checkbox" name="q2" value="e"> <b>~</b> is the same as <b>/</b> in path</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Answer Button -->
+                <button class="btn btn-primary" type="button" onclick="myAnswerCheckMethod();">Check Answers</button>
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>
