@@ -60,6 +60,55 @@ const myQuizes = [
     isInput: true,
     title: '10. How to say "Она корень"',
   },
+  {
+    isInput: false,
+    title: '11. What prints this code:<br> <code>const danya = loh; <br> console.log(danya);</code>',
+    answers: [
+      'code has an error',
+      'loh',
+      '""',
+      'danya'
+    ]
+  },
+  {
+    isInput: true,
+    title: '12. Which keyword use for creating constant variable',
+  },
+  {
+    isInput: true,
+    title: '13. How to say: "Я меняю строку"'
+  },
+  {
+    isInput: true,
+    title: '14. 20 % 4'
+  },
+  {
+    isInput: false,
+    title: '15. What prints this code:<br><code>let first = 1;<br>let second = 2;<br>let answer = first + second * 3;<br>console.log(++answer);</code>',
+    answers: [
+      '10',
+      '11',
+      '8',
+      'code has an error',
+      '14'
+    ]
+  },
+  {
+    isInput: true,
+    title: '16. How is the abbreviation <b>pwd</b> deciphered'
+  },
+  {
+    isInput: false,
+    title: '17. What prints this code:<br><code>var foo = "I";<br>var boo = "hello";<br>const num = 44;<br>foo = "you";<br>boo = num;<br>num = 2;<br>console.log(num);<code>',
+    answers: [
+      'this code has an error',
+      '44',
+      'I',
+      'you',
+      'Iyou',
+      'hello'
+    ]
+  }
 ];
 
 for (let i = 0; i < myQuizes.length; i++) {
@@ -76,7 +125,14 @@ const quizAnswers = [
   ['a', 'b'],
   'They are in remote repository',
   'It is command, which change directory',
-  'She is root'
+  'She is root',
+  ['a'],
+  'const',
+  'I change string',
+  '0',
+  ['c'],
+  'print working directory',
+  ['a']
 ]
 const quiz = new Quiz('quiz-div', quizAnswers);
 
